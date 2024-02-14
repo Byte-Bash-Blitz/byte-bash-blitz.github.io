@@ -1,0 +1,249 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  
+  align-items: center;
+}
+
+header {
+  padding: 20px 0;
+ 
+  transition: background-color 0.3s ease; /* Add this line for smooth transition */
+}
+.header {
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: background-color 0.3s, opacity 0.3s;
+  z-index: 1000;
+  display: flex;
+}
+
+
+.community-name {
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slogan {
+  
+  margin: 12px;
+}
+
+
+#hero-message {
+  font-size: 28px;
+  margin: 20px 0;
+  color: #fcf2f2;
+  font-family: 'Courier New', monospace;
+}
+
+.hero-section {
+  position: relative; /* Add this to establish a positioning context */
+  background-image: url('/assets/bg-images/vec.jpg');
+  background-color: #333;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0707076e;
+  opacity: 0.5;
+}
+
+.text-overlay {
+  position: relative; /* Add this to allow stacking */
+  z-index: 1; /* Ensure the text is on top of the background */
+  color: #fcfcfc;
+}
+
+.hero-message {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #fff7f7;
+  color: #fcfcfc;
+  font-family: 'Courier New', monospace;
+  text-align: left;
+  font-size: 68px;
+}
+
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  border:2px solid #3498db; /* Updated border color */  
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.btn-color{
+  color: #3498db;
+}
+.btn-primary:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.about-section ,
+.events-section ,
+.join-section  {
+  max-width: 1200px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Center text content horizontally */
+}
+
+
+.events-section .event-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  
+}
+
+.join-section {
+  position: relative; /* Add this to establish a positioning context */
+  background-image: url('/assets/img/join.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
+  max-width: 2135px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*add Entry transision*/
+.join-container{
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+}
+.event-card h3 {
+  color: #3498db;
+}
+
+.event-date {
+  font-style: italic;
+  color: #777;
+}
+
+/* Apply styles to the section */
+section {
+  padding: 60px 0;
+}
+
+/* Apply styles to the background container */
+.bg-graidient-gray-radial {
+  background: radial-gradient(circle, rgba(185,185,185,1) 0%, rgba(218,218,218,1) 100%);
+}
+
+/* Apply padding to the background container */
+.pad-60-0-0-0 {
+  padding-top: 60px;
+}
+
+/* Apply styles to the container */
+.row-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 15px; /* Adjust the horizontal padding as needed */
+}
+
+/* Apply styles to the title */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Apply styles to the card row */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Adjust the max width as needed */
+}
+
+/* Apply styles to each card column */
+.card-wrap-50 {
+  width: 50%; /* Each card takes up 50% of the container width */
+  padding: 15px; /* Adjust the padding as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Apply styles to the images within the cards */
+.card-flex img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Apply styles to the text below the images */
+.logo-text {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Apply styles to the down arrow */
+.pad-30 {
+  text-align: center;
+}
+
+.pad-30 img {
+  width: 50px; /* Adjust the width as needed */
+}
+
+
+footer {
+  background-color: #605aca;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; /* Adjusted padding */
+}
+
+/* Social media icon styles */
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Hover effect for social media icons */
+footer a:hover {
+  opacity: 0.7;
+}
